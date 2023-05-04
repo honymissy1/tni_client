@@ -53,7 +53,7 @@ const ProjectCard = () => {
 
 
   return(
-    <div className='container'>
+    <div className='container' id="project">
       <Space direction="vertical" 
         style={{zIndex: '5',margin: '20px auto', width: '100%', position: 'sticky', top: '10px', marginBottom: '20px'}}>
         <Search
