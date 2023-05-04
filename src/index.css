@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body{
+    height: auto;
+    overflow-y: scroll;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
+    align-items: center;
+ 
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo img{
+    width: 100%
+}
+.user{
+    display: flex;
+    font-size: 15px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0px auto;
+    list-style-type: none;
+
+}
+
+/* Hero Section */
+
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('./assets/heroimg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.899);
+}
+
+
+
+/* Projects */
+
+.projects{
+    position: relative;
+    padding: 20px;
+    width: 80vw;
+    margin: 30px auto;
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-height: 80vh;
+    overflow-y: scroll;
+    
+  
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.overlay{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .content {
+    text-align: center;
+    /* border: 1px solid; */
+    height: auto;
+    max-width: 600px;
+    color: white
+}
+
+.overlay .content h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding: 20px
+}
+
+.overlay .content p{
+    font-size: 25px;
+    padding: 20px;
+    color: rgb(164, 176, 176);
+    /* font-weight: 700; */
+}
+
+.explore{
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    border: none;
+    width: 200px;
+    height: 50px
+}
+
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    max-height: 3em; 
+    color: rgb(105, 101, 101);
+}
